@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us  - ChronoTime</title>
+    <title>Contact Us  - ChronoTime</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .contact {
+            padding: 70px 8%;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .title h1 {
+            font-size: 55px;
+            color: white;
+        }
+
+        .title h1 span {
+            color: #d4af37;
+        }
+
+        .title p {
+            font-size: 20px;
+            margin-top: 15px;
+            color: #ddd;
+        }
+
+        .content {
+            display: flex;
+            gap: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* left box */
+
+        .info {
+            width: 50%;
+            padding: 40px;
+            background-color: #111;
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+        }
+
+        .info > p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        .item {
+            display: flex;
+            margin-bottom: 28px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+
+        .icon {
+            font-size: 25px;
+            width: 50px;
+        }
+
+        .item h3 {
+            color: #d4af37;
+            margin-bottom: 5px;
+            font-size: 22px;
+        }
+
+        .item p {
+            color: #ddd;
+            font-size: 17px;
+        }
+
+        /* right box */
+
+        .form {
+            width: 50%;
+            padding: 40px;
+            background-color: #111;
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+        }
+
+        .form h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .form label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .form input,
+        .form textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 20px;
+            background-color: black;
+            color: white;
+            border: 1px solid #d4af37;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .form button {
+            width: 100%;
+            padding: 14px;
+            background-color: #d4af37;
+            color: black;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            background-color: white;
+        }
+
+        @media (max-width: 800px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .info,
+            .form {
+                width: 100%;
+            }
+
+            .title h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contact">
+
+        <div class="title">
+            <h1>Contact <span>Us</span></h1>
+
+            <p>
+                Have a question about our watches?
+                We would love to hear from you.
+            </p>
+        </div>
+
+
+        <div class="content">
+
+            <!-- Contact information -->
+
+            <div class="info">
+
+                <p>
+                    Our ChronoTime team is here to help you with
+                    product information, orders, delivery and any
+                    other questions.
+                </p>
+
+                <div class="item">
+                    <div class="icon">📍</div>
+
+                    <div>
+                        <h3>Address</h3>
+                        <p>Chennai, Tamil Nadu, India</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icon">📧</div>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@watchkadai@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icon">📞</div>
+
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icon">🕘</div>
+
+                    <div>
+                        <h3>Working Hours </h3>
+                        <p>Monday - Saturday (9 am to 6pm)</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Contact form -->
+
+            <div class="form">
+
+                <h2>Send Us a Message</h2>
+
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter your phone number">
+
+                <label>Subject</label>
+                <input type="text" placeholder="Enter subject">
+
+                <label>Message</label>
+                <textarea placeholder="Enter your message"></textarea>
+
+                <button>Send Message</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
