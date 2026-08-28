@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.contact {
+    padding: 70px 8%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h1 {
+    font-size: 55px;
+    color: white;
+}
+
+.title h1 span {
+    color: #d4af37;
+}
+
+.title p {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #ddd;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Left Box */
+
+.info {
+    width: 50%;
+    padding: 40px;
+    background-color: #111;
+    border: 2px solid #d4af37;
+    border-radius: 12px;
+}
+
+.info > p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.icon {
+    font-size: 25px;
+    width: 50px;
+}
+
+.item h3 {
+    color: #d4af37;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.item p {
+    color: #ddd;
+    font-size: 17px;
+}
+
+
+/* Right Box */
+
+.form {
+    width: 50%;
+    padding: 40px;
+    background-color: #111;
+    border: 2px solid #d4af37;
+    border-radius: 12px;
+}
+
+.form h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: white;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 800px) {
+
+    .content {
+        flex-direction: column;
+    }
+
+    .info,
+    .form {
+        width: 100%;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+}
